@@ -5,6 +5,9 @@ from unipath import Path
 from distutils.util import strtobool
 from django.core.exceptions import ImproperlyConfigured
 
+# Tell Django to use X-Forwarded headers
+USE_X_FORWARDED_HOST = True
+
 # Project base path
 BASE_DIR = Path(__file__).absolute().ancestor(2)
 
